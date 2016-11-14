@@ -526,7 +526,8 @@ void initKeyboardKana(void);
 #define BASE_COLEMAK    2
 #define BASE_JIS        3
 #define BASE_NICOLA_F   4
-#define BASE_MAX        4
+#define BASE_MINE       5
+#define BASE_MAX        5
 void emitBaseName(void);
 void switchBase(void);
 
@@ -565,12 +566,13 @@ void switchOS(void);
 #define MOD_SJ_MAC      5
 #ifndef ENABLE_DUAL_ROLE_FN
 #define MOD_MAX         MOD_SJ_MAC
+#define MOD_DEFAULT     MOD_C
 #else
 #define MOD_CX          6
 #define MOD_SX          7
 #define MOD_MAX         MOD_SX
+#define MOD_DEFAULT     MOD_SX
 #endif
-#define MOD_DEFAULT     MOD_C
 
 void emitModName(void);
 void switchMod(void);
